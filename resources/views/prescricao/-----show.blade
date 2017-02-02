@@ -1,0 +1,43 @@
+{{-- <script>window.print();</script> --}}
+@extends('layouts.prescricao')
+@section('content')
+
+@foreach ($medicamentos as $m)
+		
+		@if ($m->controlado === 1)
+			
+			@include('prescricao.includes.controlado')
+			@include('prescricao.includes.controlado')
+
+		@endif
+
+
+
+
+		@if ($m->controlado === 0)
+
+			@include('prescricao.includes.comum')
+
+		@endif
+
+@endforeach	
+
+		@if(Session::get('okatestado') === '1')
+
+<page size="A4">
+		    @include('prescricao.includes.atestado')
+</page>
+		@endif
+
+
+		@if(Session::get('okdeclaracao') === '1')
+
+		
+<page size="A4">
+
+		    @include('prescricao.includes.declaracao')
+</page>
+		@endif
+
+
+@stop

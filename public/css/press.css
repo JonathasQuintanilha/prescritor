@@ -1,0 +1,346 @@
+body {
+    background: rgb(204, 204, 204);
+    font-family: Arial;
+}
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+page .logo {
+    width: 4.5cm;
+    position: relative;
+    float: left;
+    top: 1cm;
+    left: 3cm;
+}
+
+page[size="A4"][layout="portrait"] {
+    width: 29.7cm;
+    height: 21cm;
+}
+page[size="A3"] {
+    width: 29.7cm;
+    height: 42cm;
+}
+page[size="A3"][layout="portrait"] {
+    width: 42cm;
+    height: 29.7cm;
+}
+page[size="A5"] {
+    width: 14.8cm;
+    height: 21cm;
+}
+page[size="A5"][layout="portrait"] {
+    width: 21cm;
+    height: 14.8cm;
+}
+
+/**/
+.dadosmedico {
+    position: relative;
+    float: right;
+    text-align: center;
+    font-size: 15pt;
+    top: 1cm;
+    right: 3cm;
+}
+.cabecalho {
+    width: 21cm;
+    min-height: 4.5cm;
+    
+}
+.card {
+    width: 8.8cm;
+    height: 5cm;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.card.border ul {
+    margin-left: -0.5cm;
+    font-size: 10pt;
+}
+
+.separator_normal {
+    margin-top: 0.5cm;
+}
+
+.separator_small {
+    margin-bottom: 0.23cm;
+}
+
+
+.card.border.spacelist ul>li {
+    margin-top: 0.2cm;
+}
+
+
+.spacelist{
+     margin-top: 0.2cm;
+}
+
+
+.border {
+    border: 0.01cm solid #333;
+}
+.cabecalholeft {
+    width: 10.5cm;
+    height: 5cm;
+    float: left;
+}
+.cabecalhoright {
+    width: 10.5cm;
+    height: 5cm;
+    float: right;
+}
+.sidebar {
+    width: 3.9cm;
+    height: 23.7cm;
+    float: left;
+    
+}
+.conteudo {
+    width: 17cm;
+    min-height: 20cm;
+    font-size: 14pt;
+    margin: auto;
+    position: relative;
+    border-bottom: 0.02cm solid #cdcdcd;
+    border-top: 0.02cm solid #cdcdcd;
+}
+.containercontrolado {
+    width: 18cm;
+    height: 26cm;
+    top: 1cm;
+    font-size: 14pt;
+    margin: auto;
+    position: relative;
+}
+.headercard {
+    height: 0.8cm;
+    border-bottom: 0.01cm solid #333;
+    /* habilita o flex nos filhos diretos */
+    
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    /* centraliza na vertical */
+    
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* centraliza na horizontal */
+    
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-size: 11pt;
+}
+
+
+.footercard {
+    width: 100%;
+    height: auto;
+    font-size: 8pt;
+    text-align: center;
+    position: absolute;
+    bottom: 6px;
+    left: 4px;
+    
+}
+
+.left {
+    float: left;
+}
+
+
+.right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.topborder{
+border-top: 1px solid #444;
+text-align: center;
+}
+.topo {
+    text-align: center;
+}
+.conteudo ul {
+    text-align: left;
+}
+.conteudo h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 15pt;
+}
+.conteudo .assinatura {
+    position: absolute;
+    bottom: 1cm;
+    height: 2cm;
+    margin: auto;
+    font-size: 12pt;
+    width: 100%;
+    text-align: center;
+}
+
+.localedata {
+    display: inline-block;
+    height: 1cm;
+    position: absolute;
+    bottom: 5cm;
+}
+.recepcionista {
+    /*display: inline-block;*/
+    height: 1cm;
+    width: 7cm;
+    
+    position: absolute;
+    bottom: 2cm;
+    right: 0cm;
+    float: right;
+}
+
+
+
+
+.assinatura ul {
+    text-align: center;
+}
+
+.conteudo .medicamento {
+    width: 100%;
+    height: 2cm;
+    
+    float: left;
+}
+.conteudo .enumeracao {
+    width: 1cm;
+    height: 1cm;
+    float: left;
+    font-size: 7pt;
+    text-align-last: center;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+.conteudo .dadosmedicamento {
+    width: 10cm;
+    height: 2cm;
+    float: left;
+    margin-left: 0.5cm;
+}
+
+
+.smallitalic {
+    font-style: italic;
+    font-size: 9pt;
+    color: #212121;
+    float: left;
+}
+
+
+
+.rodape {
+    width: 21cm;
+    height: 0.9cm;
+    line-height: 200%;
+    position: relative;
+    float: left;
+    text-align: center;
+
+}
+
+.footercontrolado{
+    width: 18cm;
+    height: 6cm;
+    float: left;
+    
+}
+
+.small {
+    font-size: 9pt;
+    
+}
+
+
+.pauta {
+       min-height: 13cm;
+       width: 17cm;
+       margin-top: 1cm;
+       margin-bottom: 1cm;
+       float: left;
+}
+
+.pauta ul {
+    padding-left: 0;
+}
+
+.pauta li {
+    padding-left: 0.5cm;
+    height: 1cm;
+}
+
+.textlinha {
+
+    height: 0.5cm;
+    background-color: #fff;
+}
+
+   .esq {
+    display: table;
+    float: left;
+    }
+    .separador {
+    float: left;
+    width: 100%;
+    border-bottom: 1.7px dotted #333;
+    
+    }
+    .direita {
+    float: right;
+    
+    }
+    .linha{
+    width: 17cm;
+    font-size: 11pt;
+    margin-top: 0.5cm;
+    display: flex;
+    
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .uso{
+        margin-top: 1cm;
+        width: 100%;
+        display:  inline-block; 
+    }
+
+
+
+/**/
+@media print {
+    body,
+    page {
+        margin: 0;
+        box-shadow: 0;
+    }
+}
